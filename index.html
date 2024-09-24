@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Faizan Raza Aadil</h1>
+            <p>Web Developer | Designer </p>
+            <img src="b0ba1e22-5169-4181-87b6-e7ea71f431d9.png" alt="image">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Faiazn Raza Aadil], A passionate web developer with experience in creating responsive and interactive websites.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="portfolio1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Project description goes here.</p>
+                </div>
+                <div class="card">
+                    <img src="portfolio2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Project description goes here.</p>
+                </div>
+                <div class="card">
+                    <img src="portfolio3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Project description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

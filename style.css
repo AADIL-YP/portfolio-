@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Space between text and image */
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 350px; 
+    height: auto;
+    border-radius: 50%; 
+    margin-top: 20px;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #444;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+.navbar ul li a:hover {
+    background-color: #55ebe3;
+    color: #444;
+    border-radius: 5px; 
+
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
